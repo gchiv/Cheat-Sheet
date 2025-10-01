@@ -1,0 +1,364 @@
+/*
+  Autor: Gabriel Chi
+*/
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Cheat Sheet</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="contenedor">
+      <h1>Cheat Sheet de HTML (Detallado)</h1>
+      <p>Haz clic en cada etiqueta para ver su función.</p>
+
+      <details>
+        <summary>!DOCTYPE html</summary>
+        <div class="contenido">
+          <p>
+            <strong>Función:</strong> Declara que el documento es de tipo HTML5.
+            Es obligatorio y siempre debe ser la primera línea del archivo.
+          </p>
+        </div>
+      </details>
+      <details>
+        <summary>html</summary>
+        <div class="contenido">
+          <p>
+            <strong>Función:</strong> Es la etiqueta raíz que envuelve todo el
+            contenido de la página web.
+          </p>
+        </div>
+      </details>
+      <details>
+        <summary>head</summary>
+        <div class="contenido">
+          <p>
+            <strong>Función:</strong> Contiene "meta-información" para el
+            navegador, como el título de la página, enlaces a archivos CSS o
+            scripts. Su contenido no es visible en la página.
+          </p>
+        </div>
+      </details>
+      <details>
+        <summary>body</summary>
+        <div class="contenido">
+          <p>
+            <strong>Función:</strong> Contiene todo el contenido visible de la
+            página web: textos, imágenes, videos, formularios, etc.
+          </p>
+        </div>
+      </details>
+      <details>
+        <summary>title</summary>
+        <div class="contenido">
+          <p>
+            <strong>Función:</strong> Define el texto que aparece en la pestaña
+            o en la barra de título del navegador. Se coloca dentro del
+            <code>&lt;head&gt;</code>.
+          </p>
+        </div>
+      </details>
+
+      <details>
+        <summary>header</summary>
+        <div class="contenido">
+          <p>
+            <strong>Función:</strong> Define una cabecera para la página o para
+            una sección. Generalmente contiene el logo, el título principal y el
+            menú de navegación.
+          </p>
+        </div>
+      </details>
+      <details>
+        <summary>nav</summary>
+        <div class="contenido">
+          <p>
+            <strong>Función:</strong> Define una sección con los enlaces de
+            navegación principales del sitio.
+          </p>
+        </div>
+      </details>
+      <details>
+        <summary>main</summary>
+        <div class="contenido">
+          <p>
+            <strong>Función:</strong> Representa el contenido principal y único
+            de la página. Solo debe haber una etiqueta
+            <code>&lt;main&gt;</code> por página.
+          </p>
+        </div>
+      </details>
+      <details>
+        <summary>aside</summary>
+        <div class="contenido">
+          <p>
+            <strong>Función:</strong> Define contenido secundario o relacionado,
+            como una barra lateral (sidebar) con publicidad o enlaces
+            relacionados.
+          </p>
+        </div>
+      </details>
+      <details>
+        <summary>footer</summary>
+        <div class="contenido">
+          <p>
+            <strong>Función:</strong> Define el pie de página. Usualmente
+            contiene información de copyright, enlaces de contacto y mapa del
+            sitio.
+          </p>
+        </div>
+      </details>
+
+      <details>
+        <summary>h1 - h6</summary>
+        <div class="contenido">
+          <p>
+            <strong>Función:</strong> Definen los encabezados o títulos por
+            nivel de importancia. <code>&lt;h1&gt;</code> es el más importante y
+            <code>&lt;h6&gt;</code> el de menor.
+          </p>
+          <pre><h1>Título Principal</h1>
+<h2>Subtítulo</h2></pre>
+        </div>
+      </details>
+      <details>
+        <summary>p</summary>
+        <div class="contenido">
+          <p><strong>Función:</strong> Define un párrafo de texto.</p>
+          <pre><p>Este es un párrafo de texto.</p></pre>
+        </div>
+      </details>
+      <details>
+        <summary>div</summary>
+        <div class="contenido">
+          <p>
+            <strong>Función:</strong> Crea un contenedor de bloque genérico. Se
+            usa para agrupar y estilizar grandes secciones de contenido con CSS.
+          </p>
+        </div>
+      </details>
+      <details>
+        <summary>span</summary>
+        <div class="contenido">
+          <p>
+            <strong>Función:</strong> Es un contenedor en línea sin significado.
+            Se usa para aplicar estilos (con CSS) a una pequeña parte de un
+            texto, como una palabra o una frase.
+          </p>
+        </div>
+      </details>
+      <details>
+        <summary>a</summary>
+        <div class="contenido">
+          <p>
+            <strong>Función:</strong> Crea un hipervínculo (link). Su atributo
+            más importante es <code>href</code>, que indica la URL de destino.
+          </p>
+          <pre><a href="https://www.google.com">Haz clic aquí para ir a Google</a></pre>
+        </div>
+      </details>
+
+      <details>
+        <summary>ul / li</summary>
+        <div class="contenido">
+          <p>
+            <strong>Función:</strong> <code>&lt;ul&gt;</code> crea una lista no
+            ordenada (con viñetas). <code>&lt;li&gt;</code> define cada elemento
+            de la lista.
+          </p>
+          <pre><ul>
+  <li>Elemento 1</li>
+  <li>Elemento 2</li>
+</ul></pre>
+        </div>
+      </details>
+      <details>
+        <summary>ol / li</summary>
+        <div class="contenido">
+          <p>
+            <strong>Función:</strong> <code>&lt;ol&gt;</code> crea una lista
+            ordenada (con números). <code>&lt;li&gt;</code> define cada elemento
+            de la lista.
+          </p>
+          <pre><ol>
+  <li>Primer paso</li>
+  <li>Segundo paso</li>
+</ol></pre>
+        </div>
+      </details>
+      <details>
+        <summary>dl / dt / dd</summary>
+        <div class="contenido">
+          <p>
+            <strong>Función:</strong> Crean una lista de descripción. La
+            etiqueta <code>di</code> que mencionaste no existe, la correcta es
+            <code>&lt;dl&gt;</code>.
+          </p>
+          <ul>
+            <li>
+              <code>&lt;dl&gt;</code>: La lista completa (Description List).
+            </li>
+            <li>
+              <code>&lt;dt&gt;</code>: El término a definir (Description Term).
+            </li>
+            <li>
+              <code>&lt;dd&gt;</code>: La descripción del término (Description
+              Details).
+            </li>
+          </ul>
+          <pre><dl>
+  <dt>HTML</dt>
+  <dd>Lenguaje para estructurar páginas web.</dd>
+</dl></pre>
+        </div>
+      </details>
+
+      <details>
+        <summary>table (y sus partes)</summary>
+        <div class="contenido">
+          <p>
+            <strong>Función:</strong> Crean tablas para mostrar datos tabulares.
+            Estas etiquetas deben funcionar juntas.
+          </p>
+          <ul>
+            <li>
+              <code>&lt;table&gt;</code>: El contenedor principal de la tabla.
+            </li>
+            
+            <li><code>&lt;tr&gt;</code>: Define una fila (Table Row).</li>
+            <li>
+              <code>&lt;th&gt;</code>: Define una celda de encabezado (Table
+              Head).
+            </li>
+            <li>
+              <code>&lt;td&gt;</code>: Define una celda de datos (Table Data).
+            </li>
+          </ul>
+          <pre><table>
+  <thead>
+    <tr>
+      <th>Producto</th>
+      <th>Precio</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Leche</td>
+      <td>$25</td>
+    </tr>
+  </tbody>
+</table></pre>
+        </div>
+      </details>
+
+      <details>
+        <summary>img</summary>
+        <div class="contenido">
+          <p>
+            <strong>Función:</strong> Muestra una imagen en la página. Sus
+            atributos clave son <code>src</code> (la ruta de la imagen) y
+            <code>alt</code> (texto alternativo si la imagen no carga).
+          </p>
+          <pre><img src="logo.png" alt="Logo de la empresa"></pre>
+        </div>
+      </details>
+      <details>
+        <summary>audio</summary>
+        <div class="contenido">
+          <p>
+            <strong>Función:</strong> Inserta un reproductor de audio. Se
+            recomienda usar el atributo <code>controls</code> para que el
+            usuario pueda interactuar con él.
+          </p>
+          <pre><audio controls src="cancion.mp3"></audio></pre>
+        </div>
+      </details>
+      <details>
+        <summary>video</summary>
+        <div class="contenido">
+          <p>
+            <strong>Función:</strong> Inserta un reproductor de video. También
+            usa el atributo <code>controls</code>.
+          </p>
+          <pre><video controls width="300" src="tutorial.mp4"></video></pre>
+        </div>
+      </details>
+      <details>
+        <summary>source</summary>
+        <div class="contenido">
+          <p>
+            <strong>Función:</strong> Se usa dentro de
+            <code>&lt;audio&gt;</code> o <code>&lt;video&gt;</code> para
+            especificar múltiples formatos del mismo archivo, asegurando que
+            funcione en diferentes navegadores.
+          </p>
+          <pre><video controls>
+  <source src="video.mp4" type="video/mp4">
+  <source src="video.webm" type="video/webm">
+</video></pre>
+        </div>
+      </details>
+
+      <details>
+        <summary>form</summary>
+        <div class="contenido">
+          <p>
+            <strong>Función:</strong> Es el contenedor principal para todos los
+            elementos de un formulario.
+          </p>
+        </div>
+      </details>
+      <details>
+        <summary>label</summary>
+        <div class="contenido">
+          <p>
+            <strong>Función:</strong> Asocia un texto descriptivo a un campo de
+            formulario. Mejora la accesibilidad.
+          </p>
+          <pre><label for="usuario">Nombre de usuario:</label></pre>
+        </div>
+      </details>
+      <details>
+        <summary>input</summary>
+        <div class="contenido">
+          <p>
+            <strong>Función:</strong> Es la etiqueta más versátil para crear
+            campos de formulario. El tipo de campo cambia según el atributo
+            <code>type</code>.
+          </p>
+          <pre><input type="text" id="usuario">
+<input type="password">
+<input type="email">
+<input type="submit" value="Enviar"></pre>
+        </div>
+      </details>
+      <details>
+        <summary>textarea</summary>
+        <div class="contenido">
+          <p>
+            <strong>Función:</strong> Crea un campo de texto de múltiples
+            líneas, ideal para comentarios o mensajes largos.
+          </p>
+          <pre><textarea rows="4" cols="50"></textarea></pre>
+        </div>
+      </details>
+      <details>
+        <summary>select / option</summary>
+        <div class="contenido">
+          <p>
+            <strong>Función:</strong> <code>&lt;select&gt;</code> crea una lista
+            desplegable. Cada <code>&lt;option&gt;</code> dentro de ella es un
+            elemento de esa lista.
+          </p>
+          <pre><select>
+  <option value="mx">México</option>
+  <option value="es">España</option>
+</select></pre>
+        </div>
+      </details>
+    </div>
+  </body>
+</html>
